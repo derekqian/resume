@@ -1,0 +1,148 @@
+% resume.tex
+% position: software engineer
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+% \usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Derek Qian}}
+
+1245 SW Grover St\ \ \textbullet
+\ \ Apt\ 303\ \ \textbullet
+\ \ Portland, OR 97239
+\\
+(503) 267-5036\ \ \textbullet
+\ \ derek.dejun@gmail.com
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Portland State University}}
+		{\textbf{Portland, OR}}
+	\\
+	\headerrow
+		{\emph{Student \& Teach Assistant}}
+		{\emph{2011 -- present}}
+	\begin{itemize*}
+		\item Research Project: coDoc, a tool managing code and its spec. (Eclipse, Java,
+                C++, JNI, SWT, RCP, CDT, poppler, Cario)
+		\item Course Project: CrazyPuzzle, a math puzzle game for Android platform. (Eclipse, Java, Android)
+		\item Course Project: Arum, a lightweight, easy-to-use, all-in-one solution
+                for colleting a variety of performance data. (Dyninst, C/C++, Linux, GNU Make, LaTex)
+		\item Course Project: ftpread, a simple ftp client work in both passive
+                and active mode. (FTP, TCP/IP, C, socket)
+		\item Course Project: projects from parallel programing course. (pthread, openMP, openMPI)
+		\item Course Project: projects from AI course. (A*, Bayes learning, minmax search, Genetic search)
+		\item Teach Assistant: Data Structures, Computer Systems Programming,
+		Discrete Structures, Elements Of Software Engineering.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Skypine, LLC.}}
+		{\textbf{www.skypine.com}}
+	\\
+	\headerrow
+		{\emph{Software Developer \& Project Manager}}
+		{\emph{2011 -- 2011}}
+	\begin{itemize*}
+		\item Navigation Unit using i.MX51 processor and Windows CE 6.0.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Seuic, LLC.}}
+		{\textbf{www.seuic.com}}
+	\\
+	\headerrow
+		{\emph{Software Developer \& Contributing Community Member}}
+		{\emph{2004 -- 2011}}
+	\begin{itemize*}
+		\item Smartphone using PXA270 and Windows Mobile 6.04.
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Portland State University}}
+		{\textbf{Portland, OR}}
+	\\
+	\headerrow
+		{\emph{College of Engineering, M.S. Computer Science}}
+		{\emph{2011 -- present}}
+	\begin{itemize*}
+		\item Nothing.
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	C, \CPP, Java, JavaScript, \LaTeX, Perl, Python, shell script, SQL
+	\item[Open Source Contributions:]
+	Project A, Project B, Project C
+\end{description*}
+\end{indentsection}
+
+\end{document}
