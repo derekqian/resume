@@ -1,0 +1,189 @@
+% resume.tex
+% position: embedded system engineer
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+% \usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Derek Qian}}
+
+1245 SW Grover St\ \ \textbullet
+\ \ Apt\ 303\ \ \textbullet
+\ \ Portland, OR 97239
+\\
+(503) 267-5036\ \ \textbullet
+\ \ derek.dejun@gmail.com
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	C, \CPP, Java, x86/ARM assembly, \LaTeX, Python, shell script, SQL, makefile
+	\item[Tools:]
+	Visual Studio, Platform Builder, Eclipse, emacs/vim, git/svn, PADS
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Portland State University}}
+		{\textbf{Portland, OR}}
+	\\
+	\headerrow
+		{\emph{College of Engineering \& Computer Science, M.S. Computer Science}}
+		{\emph{2011 -- present}}
+	\begin{itemize*}
+		\item GPA 3.91/4.0.
+	\end{itemize*}
+
+	\item 
+	\headerrow
+		{\textbf{Southeast University}}
+		{\textbf{Nanjing, Jiangsu, China}}
+	\\
+	\headerrow
+		{\emph{PhD candidate, Electrical and Electronics Engineering}}
+		{\emph{2008 -- 2011}}
+	\begin{itemize*}
+		\item GPA 3.67/4.0.
+	\end{itemize*}
+
+	\item 
+	\headerrow
+		{\textbf{Southeast University}}
+		{\textbf{Nanjing, Jiangsu, China}}
+	\\
+	\headerrow
+		{\emph{M.S. Electrical and Electronics Engineering}}
+		{\emph{2004 -- 2007}}
+	\begin{itemize*}
+		\item Top 10\%.
+	\end{itemize*}
+
+	\item 
+	\headerrow
+		{\textbf{Southeast University}}
+		{\textbf{Nanjing, Jiangsu, China}}
+	\\
+	\headerrow
+		{\emph{Bachelor's degree, Electrical and Electronics Engineering}}
+		{\emph{2000 -- 2004}}
+	\begin{itemize*}
+		\item Top 10\%.
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Portland State University}}
+		{\textbf{Portland, OR}}
+	\\
+	\headerrow
+		{\emph{Student \& Teaching Assistant}}
+		{\emph{2011 -- present}}
+	\begin{itemize*}
+		\item Research Project: coDoc, a tool managing code and its spec. (Eclipse, Java,
+                C++, JNI, SWT, RCP, CDT, poppler, Cario)
+		\item Course Project: CrazyPuzzle, a math puzzle game for Android platform. (Eclipse, Java, Android)
+		\item Course Project: Arum, a lightweight, easy-to-use, all-in-one solution
+                for colleting a variety of performance data of applications. (Dyninst, C/C++, Linux, GNU Make, \LaTeX)
+		\item Course Project: ftpread, a simple ftp client working in both passive
+                and active mode. (FTP, TCP/IP, C, socket)
+		\item Course Project: projects from parallel programing course. (Linux, pthread, OpenMP, MPI, python)
+		\item Teach Assistant: Data Structures, Computer Systems Programming,
+		Discrete Structures, Elements Of Software Engineering.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Skypine Co., Ltd.}}
+		{\textbf{www.skypine.cn}}
+	\\
+	\headerrow
+		{\emph{Senior Software Engineer}}
+		{\emph{2011 -- 2011}}
+	\begin{itemize*}
+		\item The core board for Navigation Unit using i.MX51 processor and Windows CE 6.0/Android 2.3. (Visual Studio,
+                BSP, Bootloader, Kernel, Driver, Embedded Linux, Android Framework)
+		\item Optimized the media player. (Direct Draw, Direct Show, Overlay, YUV, RGB)
+		\item Customized the touchscreen calibrator.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Seuic, LLC.}}
+		{\textbf{www.seuic.com}}
+	\\
+	\headerrow
+		{\emph{Senior Software Engineer \& Project Manager}}
+		{\emph{2004 -- 2010}}
+	\begin{itemize*}
+		\item Managed the project developing a smartphone using PXA310 processor
+                and Windows CE6.0. (XSCALE, OAL, MS Project, WTL, MFC)
+		\item Smartphone using PXA270 and Windows Mobile 6.04.
+		\item PND (Portable Navigation Device), using PXA 270 and Windows CE 4.2. (NMEA, MLC NAND flash, FMD, FAL, ECC)
+	\end{itemize*}
+
+\end{itemize}
+
+
+\end{document}
