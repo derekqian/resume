@@ -1,4 +1,4 @@
-# "sudo apt-get install tex4ht" for htlatex
+# "sudo apt-get install tex4ht" for htlatex, mk4ht
 
 all : resume DerekQianResume631420OSSWI
 
@@ -9,6 +9,7 @@ resume :
 
 DerekQianResume631420OSSWI :
 	htlatex DerekQianResume631420OSSWI
+	mk4ht oolatex DerekQianResume631420OSSWI.tex
 	latex DerekQianResume631420OSSWI
 	dvips DerekQianResume631420OSSWI
 	ps2pdf DerekQianResume631420OSSWI.ps
