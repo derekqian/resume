@@ -13,6 +13,7 @@ DerekQianResume631420OSSWI :
 	latex DerekQianResume631420OSSWI
 	dvips DerekQianResume631420OSSWI
 	ps2pdf DerekQianResume631420OSSWI.ps
+	pdflatex DerekQianResume629945ASE.tex
 
 clean : 
 	rm *.aux
