@@ -1,0 +1,326 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+% \usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Derek Qian}}
+
+1245 SW Grover St\ \ \textbullet
+\ \ Apt\ 303\ \ \textbullet
+\ \ Portland, OR 97239
+\\
+(503) 267-5036\ \ \textbullet
+\ \ derek.dejun@gmail.com
+\end{center}
+
+
+% qualification
+\hrule
+\vspace{-0.4em}
+\subsection*{Summary of Qualifications}
+\begin{itemize*}
+	\item Programming: C/C++ (advanced), Java (advanced), SQL (intermediate)
+	\item Strong coding, implementation, and design skills
+	\item Solid background of data structure and algorithm
+	\item Work experience with Win32 API and Android
+        \item Familiar with multi-threading and inter-process communication
+	\item Familiar with agile process like Srum and TDD
+	\item Analytical thinker, consistently resolves ongoing issues or defects.
+	% \item Analytical thinker that consistently resolves ongoing issues or defects, often called upon to consult on problems that have eluded resolution by others.
+	\item Good verbal and written communication skills. (English and Chinese)
+        % \item Fully professional written and verbal technical English communication skills (in addition to Chinese)
+        % \item Approaching full professional written and verbal technical English communication skills (in addition to Chinese).
+\end{itemize*}
+
+% education
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Portland State University}}
+		{\textbf{Portland, OR}}
+	\\
+	\headerrow
+		{\emph{College of Engineering \& Computer Science, M.S. Computer Science}}
+		{\emph{2011 -- present}}
+	\begin{itemize*}
+		\item \textbf{GPA:} 3.91/4.0.
+		%\item \textbf{Main Courses:} 
+                                % Building Software Systems with Components,
+                                % Programming Languages, 
+                                %Computer Architecture,
+                                %Concepts of Operating Systems,
+                                %Parallel Programming, 
+                                %Software Engineering.
+                                % Internetworking Protocols, 
+                                % Artificial Intelligence,
+                                % Theory of Computation.
+	\end{itemize*}
+
+	% \item 
+	%\headerrow
+	% 	{\textbf{Southeast University}}
+	% 	{\textbf{Nanjing, Jiangsu, China}}
+	% \\
+	% \headerrow
+	% 	{\emph{PhD candidate, Electrical and Electronics Engineering}}
+	% 	{\emph{2008 -- 2011}}
+	% \begin{itemize*}
+	% 	\item \textbf{GPA:} 3.67/4.0.
+	% 	\item \textbf{Main Courses:} 
+        %                         System on Chip (SoC) Design, 
+                                % RF Microelectronics, 
+                                % ULSI Devices Circuit \& System, 
+                                %Introduction to Microactuators, 
+        %                         Mathematical Model.
+	% \end{itemize*}
+
+	\item 
+	\headerrow
+		{\textbf{Southeast University}}
+		{\textbf{Nanjing, Jiangsu, China}}
+	\\
+	\headerrow
+		{\emph{M.S. Electrical and Electronics Engineering}}
+		{\emph{2004 -- 2007}}
+	\begin{itemize*}
+		\item Top 10\%.
+                %\item \textbf{Main Courses:} 
+                                %Hardware \& Software of Microcomputer System, 
+                                %Advanced Digital Signal Processing.
+                                % Numerical Analysis, 
+                                % Elements of Information Technology,
+                                % VLSI System Design.
+                                % Application Specific Integrated Circuit Design, 
+                                % Design of Analog CMOS Integrated Circuits.
+                                % Physics of VLSI,
+                                % Physics of Semiconductor Devices.
+	\end{itemize*}
+
+	\item 
+	\headerrow
+		{\textbf{Southeast University}}
+		{\textbf{Nanjing, Jiangsu, China}}
+	\\
+	\headerrow
+		{\emph{Bachelor's degree, Electrical and Electronics Engineering}}
+		{\emph{2000 -- 2004}}
+	\begin{itemize*}
+		\item Top 10\%.
+                %\item \textbf{Main Courses:}
+                                %Microcomputer System \& Interface,
+                                %Principle \& Application of MCU,
+                                % Microcomputer Experiment,
+                                %Operating System,
+                                %Computer Architecture \& Logic Design,
+                                % Programming \& C Language,
+                                %Data Structures \& Algorithm.
+                                % C++ Software Engineering,
+                                % Windows Programming,
+                                % Fundamentals of Computer Network,
+                                % Graph Theory \& Its Application,
+                                % Fundamentals of Circuit,
+                                % Signals \& Linear Systems,
+                                % Fundamentals of Electronics Circuits,
+                                % Laboratory of Circuit \& Logic Design,
+                                % Principle \& Application of Programmable Devices,
+                                % Digital Signal Processing,
+                                % Principle of Communication,
+                                % Principles of Automatic Control,
+                                % MATLAB Language,
+                                % CAD for Printed Circuit Board.
+                                % Electromagnetic Theory,
+                                % Fields \& Waves in Information Electric Technique,
+                                % Conspectus of Micro-electronic Devices,
+                                % Analysis \& Design of Digital Integrated Circuits,
+                                % Analysis \& Design of Analog Integrated Circuits,
+                                % Integrated Circuits CAD.
+                                % Integrated Circuits Manufacturing Techniques,
+                                % Reliability of Microelectronic Devices \& Integrated Circuits,
+                                % Fundamentals of Optoelectronic Physics,
+                                % Numerical Method of Partial Differential Equations,
+                                % Probability \& Statistics,
+                                % Practical Statistical Analysis,
+                                % Numerical Computing \& Modeling,
+                                % Mathematical Model,
+                                % Mathematical Programming,
+                                % Equations of Mathematical Physics,
+                                % Fuzzy Mathematics,
+                                % Digital Systems Design \& Electronic Technique Experimentation,
+                                % Comprehensive Electronic Design, % experiment
+                                % Course Design for Integrated Circuits,
+                                % Metal Working Practice,
+                                % Engineering Chemistry,
+                                % Graduation Project,
+                                % The principle of Color TV,
+                                % Computer Graphics, % AutoCAD
+                                % Advanced Mathematics,
+                                % Geometry \& Algebra.
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Portland State University}}
+		{\textbf{Portland, OR}}
+	\\
+	\headerrow
+		{\emph{Student \& Teaching Assistant}}
+		{\emph{2011 -- present}}
+	\begin{itemize*}
+		%\item Presented a two-hour university lecture about x86 assembly language in Intel syntax. (MASM, x86 assembly)
+		% \item Presented a two-hour university lecture about x86 assembly language in Intel syntax, at request of professor, who would be out of town. (MASM, x86 assembly)
+		\item Wrote CrazyPuzzle, a math puzzle game for Android platform. (Eclipse, Java, Android)
+		\item Extended with application profiling feature for ARUM (Application Resource Usage Monitor), a lightweight, all-in-one solution
+                for colleting a variety of performance data of applications. (Dyninst, C/C++, Linux, GNU Make, \LaTeX)
+		\item Implemented parallel sorting algorithms using share memory and message passing respectively. (Linux, pthread, OpenMP, MPI, python)
+		\item Wrote ftpread, a simple ftp client working in both passive
+                and active mode. (FTP protocol, TCP/IP, C, socket)
+		\item Designed and implemented coDoc, a tool managing codes and its specifications. (Eclipse, Java,
+                C++, JNI, SWT, RCP, CDT, poppler, Cario)
+		\item Teach Assistant: Data Structures, Computer Systems Programming,
+		Discrete Structures, Elements Of Software Engineering.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Skypine Co., Ltd.}}
+		{\textbf{www.skypine.cn}}
+	\\
+	\headerrow
+		{\emph{Senior Software Engineer}}
+		{\emph{2011 -- 2011}}
+	\begin{itemize*}
+		% \item The core board for Navigation Unit using i.MX51 processor and Android 2.3. (u-boot, Embedded Linux, 
+                % Android Framework, Driver)
+		\item Ported Android 2.3 for the Navigation Unit using i.MX51 processor. My work included the porting of u-boot
+                and iNand. (u-boot, Embedded Linux, Android Framework, Driver)
+		% \item The core board for Navigation Unit using i.MX51 processor and Windows CE 6.0. (Visual Studio, BSP, 
+                % Bootloader, Kernel, Driver)
+		\item Ported Windows CE 6.0 for the Navigation Unit using i.MX51 processor. My work included the porting of bootloader,
+                kernel, SDMMC driver, LCD driver, UART driver, audio driver, and touch screen driver. (Visual Studio, Platform Builder, BSP, 
+                Bootloader, Kernel, Driver)
+		% \item Optimized the media player. (Direct Draw, Direct Show, Overlay, YUV, RGB)
+		\item Customized the touchscreen calibrator. (UI, touch screen driver)
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Seuic, LLC.}}
+		{\textbf{www.seuic.com}}
+	\\
+	\headerrow
+		{\emph{Senior Software Engineer \& Project Manager}}
+		{\emph{2009 -- 2010}}
+	\begin{itemize*}
+		% \item PMC (Personal Media Center), using CS8900 and Android 2.3. (Android, Android Framework, HAL, u-boot, linux kernel, device driver)
+		% \item Managed team of 3 alumni software engineers to ensure weekly targets achieved on time. (MS project, svn)
+		\item Managed team of 3 alumni engineers to ensure weekly targets achieved on time. (MS project, svn)
+		\item Designed an application framwork using flash as UI. (AMUSE flash engine, Action Script)
+		\item Wrote a tool to generate image for manufacture purpose, which contains bootloader, MBR, OS image and user partition. (MBR, partition)
+		\item Wrote a tool to generate user data image which can be burned directly into NAND flash. (FAT, XML)
+		\item Wrote a light-weight XML parser to read parameters from configuration files in bare metal environment. (XML parser, Automata)
+		\item Wrote a Windows REG file parser to import Windows registry table data from files. (Windows REG file parser, Automata)
+	\end{itemize*}
+	\headerrow
+		{\emph{Senior Software Engineer}}
+		{\emph{2007 -- 2008}}
+	\begin{itemize*}
+		\item Improved the software-based Hamming ECC encoder/decoder for SLC NAND flash driver. %(Hamming code, ECC, SLC NAND)
+                \item Ported a RS ECC encoder/decoder for MLC NAND flash driver in bare metal environment. %(RS code, MLC NAND)
+		\item Wrote a high-performance software-based BCH ECC encoder/decoder for MLC NAND flash driver. %(BCH code, MLC NAND)
+		\item Designed and implemented an innovational FAL for MLC NAND Flash, which saved a lot of money for my company. %(FAL, MLC NAND)
+		% \item Ported Windows Mobile bootloader for our smartphone product. (Windows Mobile, bootloader)
+		\item Ported and enhanced the performance of camera driver and implemented camera application for our smartphone product. (DirectShow,
+                DMA, Dual-Buffer)
+		\item Enhanced the performance of CMMB driver for our smartphone product. (DMA, Bus Arbitrator)
+	\end{itemize*}
+	\headerrow
+		{\emph{Software Engineer}}
+		{\emph{2004 -- 2007}}
+	\begin{itemize*}
+		% \item Wrote a prototype for the navigator software on our PDA product. (NMEA0183)
+		% \item Wrote a prototype for the phone software on our PDA product. (AT command)
+		\item Wrote the driver and the application for IC card operator. (Windows CE 4.2, GPIO, Win32)
+		% \item Designed and implemented a solution to protect the copyright of our product.
+		\item Designed and implemented a GPIO driver which can manage the GPIO resource efficiently.
+		\item Ported USB mass storage module to our PND product from Windows CE 5.0. %(USB, Mass Storage)
+		\item Ported SDIO driver for PND product to support DVB-H mobile TV. %(SDIO)
+		% \item PDA (Personal Digital Assistant), using PXA 255 and Embedded Linux. (u-boot, linux kernel, device driver)
+		% \item Managed the project developing a smartphone using PXA310 processor
+                % and Windows CE6.0. (Power management, XSCALE, OAL, MS Project, WTL, MFC)
+		% \item Smartphone using PXA270 and Windows Mobile 6.04.
+		% \item PND (Portable Navigation Device), using PXA 270 and Windows CE 4.2. (NMEA, MLC NAND flash, FMD, FAL, ECC)
+	\end{itemize*}
+
+\end{itemize}
+
+
+% skill
+\hrule
+\vspace{-0.4em}
+\subsection*{Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:] C, \CPP, Java, x86/ARM assembly, makefile, shell script, Python, SQL, XML, HTML, \LaTeX
+	\item[Frameworks:] MFC, WTL, SWT
+	\item[Tools:] Visual Studio, Eclipse, git/svn, Platform Builder, gcc, arm-gcc, emacs/vim, PADS
+	\item[Open source projects:] Android, linux kernel, u-boot, busybox, buildroot, poppler
+\end{description*}
+\end{indentsection}
+
+
+\end{document}
